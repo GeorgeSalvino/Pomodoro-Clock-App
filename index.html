@@ -4,8 +4,12 @@
     <meta charset="utf-8">
     <title>Pomodoro Clock</title>
     <link rel="stylesheet" href="css/master.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.0/howler.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
@@ -17,22 +21,25 @@
         <hr>
       </div>
       <div class="current-section text-center">
-        <h3>Current Section</h3>
+        <h3 class="break-or-not">Current Section</h3>
         <h3 class="current-timer">25</h3>
+        <button type="button" name="button" class="btn btn-primary" id="start">Start</button>
+        <button type="button" name="button" class="btn btn-danger" id="reset">Reset</button>
       </div>
       <div class="section-length">
         <h3>Section Length</h3>
-        <h3 class="section-timer">25</h3>
+        <i class="fa fa-minus" aria-hidden="true" id="minus-section"></i> <span class="section-timer">25</span> <i class="fa fa-plus" aria-hidden="true" id="plus-section"></i>
       </div>
       <div class="break-length">
         <h3>Break Length</h3>
-        <h3 class="break-timer">5</h3>
+        <i class="fa fa-minus" aria-hidden="true" id="minus-break"></i> <span class="break-timer">5</span><i class="fa fa-plus" aria-hidden="true" id="plus-break"></i>
       </div>
     </div>
 
 
-    <div class="credit">
-      <span>tomato by Alessandro Suraci from the Noun Project</span>
+    <div id="credit" class="text-center">
+      <span>Only for Desktops</span><br>
+      <span>Tomato by Alessandro Suraci from the Noun Project</span>
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>

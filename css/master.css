@@ -4,6 +4,10 @@ body,html{
 
 body{
   background:  #2A3038 !important;
+    -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .tomato{
@@ -18,9 +22,9 @@ body{
 }
 
 #credit{
-  position:relative;
+  position:absolute;
   bottom:0;
-  display:inline-block;
+  left:38%;
   color:white;
 }
 
@@ -44,22 +48,38 @@ body{
 
 .section-length{
   position:relative;
-  bottom:-60%;
+  bottom:-50%;
   left:-15%;
   font-family: 'Slabo 27px', serif !important;
 }
 
 .break-length{
   position: relative;
-  bottom:-41%;
+  bottom:-30%;
   right:-75%;
   font-family: 'Slabo 27px', serif !important;
 }
 
 .section-timer{
-  margin-left:60px
+  margin-left:-10px;
+  font-size:30px;
 }
 
 .break-timer{
-  margin-left:55px
+  margin-left:-10px;
+  font-size:30px;
+}
+
+i{
+  margin-left:20px;
+  margin-right:20px;
+  position:relative;
+}
+
+i:hover{
+  cursor: pointer;
+}
+
+.current-timer{
+  font-size:30px;
 }
